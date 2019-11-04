@@ -22,3 +22,35 @@ function queueTime(customers, n) {
 
    return Math.max(...checkOutLines)
   }
+
+//   function queueTime(customers, n) {
+//     var w = new Array(n).fill(0);
+//     for (let t of customers) {
+//       let idx = w.indexOf(Math.min(...w));
+//       w[idx] += t;
+//     }
+//     return Math.max(...w);
+//   }
+
+
+//   function queueTime(customers, n) {
+//     //TODO
+//    checkOutLines = []
+
+//    for (let i = 0; i < n; i++) {
+//      checkOutLines.push(0)
+//    }
+
+//    customers.forEach(customer => {
+//      checkOutLines[0] += customer
+
+//      checkOutLines.sort((a,b) => {
+//        return a - b
+//      })
+//    })
+
+//    return checkOutLines.sort((a, b) => {
+//     return b - a
+//   })[0]
+
+//   }
